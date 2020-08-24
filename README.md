@@ -1,6 +1,7 @@
 # action-github-app-token
 
-This uses GitHub Apps to fetch an auth token for an App installation
+This uses GitHub Apps to fetch a GitHub auth token for a GitHub App installation.
+The GitHub App is used to authorize API access across multiple repositories.
 
 ## Development
 
@@ -16,7 +17,9 @@ $ yarn build
 
 ## Usage
 
-The action will provide a `token` output.
+You'll want to fork this and use your own GitHub Application's ID and add an organization secret with the App's private key.
+
+The action will then provide a `token` output.
 
 ```
   - name: my-app-install token
